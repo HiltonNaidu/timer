@@ -18,7 +18,7 @@ font = pygame.font.Font(None, 64)
 
 # Set up the timer variables
 clock = pygame.time.Clock()
-time_limit = 60  # Time limit in seconds
+time_limit = 10  # Time limit in seconds
 time_remaining = time_limit * 1000  # Convert time limit to milliseconds
 
 # Start the timer
