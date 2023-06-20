@@ -20,7 +20,10 @@ systems = {
     "win32": "windows",
     "linux" and "linux2": "linux"
 }
-OS = systems[sys.platform]
+try:
+    OS = systems[sys.platform]
+except:
+    utility.error_message("invalid OS")
 
 
 # getting darnk mode settings 
@@ -28,6 +31,4 @@ if utility.check_appearance():
     COLOUR_MODE = "dark"
 else:
     COLOUR_MODE = "light"
-
-
 
